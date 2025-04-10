@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect,useRef } from 'react'
-import { createRoot } from 'react-dom/client'
+
 
 
 function App() {
@@ -44,7 +44,8 @@ const copyPassword = useCallback(()=>{
           <input 
           ref={passwordRef}
           type="text" 
-          value={password} 
+          readOnly
+          value={password}
           className='w-full text-black bg-white px-1 py-1' />
 
           <button 
